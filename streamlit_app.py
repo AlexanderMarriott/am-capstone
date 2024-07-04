@@ -245,7 +245,7 @@ if not graph_df.empty:
     pivot_df = graph_df.pivot(index='index', columns='coin_id', values='normalized_price')
     st.divider()
 
-    st.title("Normalized Price Data")
+    st.markdown("""<h3>Normalized Price Data</h3>""", unsafe_allow_html=True)
     # Display the line chart
     st.line_chart(pivot_df)
 else:
