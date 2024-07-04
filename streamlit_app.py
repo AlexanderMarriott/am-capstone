@@ -169,7 +169,7 @@ st.divider()
 
 # Show a multiselect widget with the genres using `st.multiselect`.
 compare_crypto = st.multiselect(
-    "Add and remove Crypto Currencys to compare and retrieve current data.",
+    st.markdown("""<h3>Add and remove Crypto Currencys to compare and retrieve current data.</h3>""", unsafe_allow_html=True),
     df.coin_id.unique(),
     default=["bitcoin", "ethereum", "solana"]
 )
