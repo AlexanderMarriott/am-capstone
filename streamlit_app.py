@@ -61,7 +61,7 @@ comparison_df['percentage_change'] = ((comparison_df['current_price'] - comparis
 def format_display(row):
     change_indicator = "▲" if row['percentage_change'] > 0 else "▼"
     color = "green" if row['percentage_change'] > 0 else "red"
-    return f"{row['symbol']}: ${row['current_price']} (<span style='color:{color};'>{change_indicator} {abs(row['percentage_change']):.2f}%</span>)"
+    return f"{row['symbol']}: ${row['current_price']} <span style='color:{color};'>({change_indicator} {abs(row['percentage_change'])):.2f}%</span>"
 
 # Sort the DataFrame by 'percentage_change' in descending order to get biggest gains first
 comparison_df_sorted = comparison_df.sort_values(by='percentage_change', ascending=False)
