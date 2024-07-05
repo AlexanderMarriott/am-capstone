@@ -85,7 +85,7 @@ else:
     filtered_df = comparison_df_sorted
 
 # radio buttons for sorting order
-sort_order = st.sidebar.radio("Sort Order by % change", ["Ascending", "Descending"])
+sort_order = st.sidebar.radio("Sort Order by % change (24h)", ["Ascending", "Descending"])
 
 # sorting based on user selection
 if sort_order == "Ascending":
