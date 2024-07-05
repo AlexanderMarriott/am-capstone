@@ -213,8 +213,8 @@ if not most_recent_updates.empty:
         html_content = f"""
         <div style="border:2px solid #4CAF50; border-radius: 5px; padding: 10px; margin: 10px;">
             <h4>{crypto['coin_name']}</h4>
-            <p>Price: {crypto['price']}</p>
-            <p>Market Cap: {crypto['market_cap']}</p>
+            <p>Price: ${crypto['price']}</p>
+            <p>Market Cap: ${crypto['market_cap']}</p>
             <p>Ticker: {crypto['ticker']}</p>
         </div>
         """
