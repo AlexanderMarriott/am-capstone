@@ -188,7 +188,7 @@ if not most_recent_updates.empty:
             'coin_name': row['name'],
             'price': row['current_price'],
             'market_cap': row['market_cap'],  
-            'last_updated': row['last_updated']
+            'ticker': row['symbol']
         }
         selected_cryptos_info.append(crypto_info)  
 
@@ -215,7 +215,7 @@ if not most_recent_updates.empty:
             <h4>{crypto['coin_name']}</h4>
             <p>Price: {crypto['price']}</p>
             <p>Market Cap: {crypto['market_cap']}</p>
-            <p>Last Updated: {crypto['last_updated']}</p>
+            <p>Ticker: {crypto['ticker']}</p>
         </div>
         """
         
